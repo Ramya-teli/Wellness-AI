@@ -1,0 +1,147 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-6xl font-medium tracking-tight leading-tight",
+        "h2": "text-4xl md:text-5xl font-medium tracking-tight",
+        "h3": "text-3xl md:text-4xl font-medium tracking-tight",
+        "h4": "text-2xl md:text-3xl font-medium tracking-tight",
+        "body_lg": "text-lg md:text-xl leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground tracking-wide uppercase"
+      }
+    },
+    "colors": {
+      "theme": "dark",
+      "palette": {
+        "background": "#050a08",
+        "foreground": "#f0fdf4",
+        "card": "#0f1612",
+        "card_foreground": "#f0fdf4",
+        "popover": "#0f1612",
+        "popover_foreground": "#f0fdf4",
+        "primary": "#86efac",
+        "primary_foreground": "#050a08",
+        "secondary": "#2dd4bf",
+        "secondary_foreground": "#050a08",
+        "muted": "#1a2e22",
+        "muted_foreground": "#94a3b8",
+        "accent": "#a78bfa",
+        "accent_foreground": "#050a08",
+        "destructive": "#ef4444",
+        "destructive_foreground": "#f0fdf4",
+        "border": "#1e293b",
+        "input": "#1e293b",
+        "ring": "#86efac"
+      },
+      "gradients": {
+        "primary": "bg-gradient-to-r from-emerald-400 to-teal-400",
+        "secondary": "bg-gradient-to-r from-teal-400 to-cyan-400",
+        "accent": "bg-gradient-to-r from-violet-400 to-fuchsia-400",
+        "glass": "bg-black/40 backdrop-blur-xl border border-white/10"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-12",
+        "section_gap": "gap-8 md:gap-16",
+        "component_gap": "gap-4 md:gap-6"
+      },
+      "border_radius": {
+        "lg": "rounded-3xl",
+        "md": "rounded-2xl",
+        "sm": "rounded-xl"
+      },
+      "grid": {
+        "dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+        "bento": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6"
+      }
+    },
+    "components": {
+      "button": {
+        "default": "rounded-full px-8 py-3 font-medium transition-all duration-300 hover:scale-105 active:scale-95",
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_rgba(134,239,172,0.3)]",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90",
+        "ghost": "hover:bg-white/10 text-foreground",
+        "outline": "border border-primary/50 text-primary hover:bg-primary/10"
+      },
+      "card": {
+        "base": "rounded-3xl bg-card/50 backdrop-blur-md border border-white/5 shadow-xl overflow-hidden",
+        "hover": "hover:border-white/10 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+      },
+      "input": {
+        "base": "rounded-xl bg-white/5 border-white/10 focus:border-primary/50 focus:ring-primary/20 h-12 px-4"
+      }
+    },
+    "motion": {
+      "transitions": {
+        "default": "transition-all duration-300 ease-out",
+        "slow": "transition-all duration-700 ease-out"
+      },
+      "animations": {
+        "fade_in": "animate-in fade-in duration-500",
+        "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+        "scale_in": "animate-in zoom-in-95 duration-300"
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "hero": {
+        "url": "https://images.unsplash.com/photo-1594561177665-052b6b4b781a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Calm meditation scene with reflection",
+        "category": "hero"
+      },
+      "meditation": {
+        "url": "https://images.unsplash.com/photo-1758274539654-23fa349cc090?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Yoga instructor in nature",
+        "category": "feature"
+      },
+      "yoga": {
+        "url": "https://images.unsplash.com/photo-1707257969667-68804d47f5da?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Yoga silhouette at sunset",
+        "category": "feature"
+      },
+      "sleep": {
+        "url": "https://images.unsplash.com/photo-1758273239813-cecda76c6c19?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Peaceful sleep in comfortable bed",
+        "category": "feature"
+      },
+      "texture": {
+        "url": "https://images.unsplash.com/photo-1765140232003-2d5eba35c792?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Zen stones and water texture",
+        "category": "background"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width-1.5"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Implement the 'Organic & Earthy' dark theme using the specified color palette.",
+    "Use 'Playfair Display' for all headings to give a premium wellness feel.",
+    "Use 'Manrope' for body text for high readability.",
+    "Apply 'glassmorphism' styles to cards and dashboards (bg-black/40 + backdrop-blur).",
+    "Use the 'Bento' grid layout for the main dashboard.",
+    "Ensure all interactive elements have hover states and micro-interactions.",
+    "Use the provided image URLs for their respective sections.",
+    "Integrate Opik observability components with a 'tech-meets-nature' aesthetic (neon data on dark organic bg).",
+    "Do NOT use default Shadcn radii; use 'rounded-3xl' for a softer, organic look.",
+    "Ensure high contrast for text (WCAG AA) even in dark mode.",
+    "Add 'data-testid' to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' designs; aim for unique, organic layouts.",
+    "Use 2-3x more spacing than usual.",
+    "Never use pure black (#000000); use the tinted charcoal/green provided.",
+    "Always add transitions to interactive elements.",
+    "Use 'sonner' for toasts.",
+    "Prioritize 'framer-motion' for entrance animations."
+  ]
+}
