@@ -1,0 +1,170 @@
+/* App-specific styles */
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050a08 0%, #0f1612 50%, #050a08 100%);
+}
+
+/* Navigation styles */
+.nav-link {
+  @apply px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300;
+  @apply text-muted-foreground hover:text-foreground hover:bg-white/5;
+}
+
+.nav-link.active {
+  @apply text-primary bg-primary/10;
+}
+
+/* Card hover effects */
+.wellness-card {
+  @apply rounded-3xl bg-card/50 backdrop-blur-md border border-white/5;
+  @apply transition-all duration-300 hover:border-white/10 hover:-translate-y-1;
+  @apply hover:shadow-xl;
+}
+
+/* Score circle */
+.score-circle {
+  @apply relative flex items-center justify-center;
+}
+
+.score-circle::before {
+  content: '';
+  @apply absolute inset-0 rounded-full;
+  background: conic-gradient(from 0deg, hsl(var(--primary)) var(--progress), transparent var(--progress));
+}
+
+/* Chat bubbles */
+.chat-bubble-user {
+  @apply bg-primary/20 text-foreground rounded-3xl rounded-br-lg;
+  @apply px-4 py-3 max-w-[80%] ml-auto;
+}
+
+.chat-bubble-assistant {
+  @apply bg-card border border-white/5 text-foreground rounded-3xl rounded-bl-lg;
+  @apply px-4 py-3 max-w-[80%];
+}
+
+/* Loading animation */
+.loading-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.loading-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: hsl(var(--primary));
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-dots span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Metric cards */
+.metric-card {
+  @apply p-6 rounded-3xl;
+  @apply bg-card/50 backdrop-blur-md border border-white/5 transition-all duration-300;
+}
+
+.metric-card:hover {
+  @apply border-white/10 shadow-lg;
+}
+
+/* Progress bars */
+.progress-bar {
+  @apply h-2 rounded-full bg-muted overflow-hidden;
+}
+
+.progress-bar-fill {
+  @apply h-full rounded-full transition-all duration-500 ease-out;
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+}
+
+/* Tabs styling */
+.tab-trigger {
+  @apply px-4 py-2 rounded-xl text-sm font-medium transition-all;
+  @apply text-muted-foreground hover:text-foreground;
+}
+
+.tab-trigger[data-state="active"] {
+  @apply bg-primary/10 text-primary;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  @apply fixed inset-0 bg-black/60 backdrop-blur-sm z-50;
+}
+
+/* Tooltip styles */
+.tooltip-content {
+  @apply bg-card border border-white/10 rounded-xl px-3 py-2 text-sm;
+  @apply shadow-xl;
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10;
+  @apply text-foreground placeholder:text-muted-foreground;
+  @apply focus:border-primary/50 focus:ring-2 focus:ring-primary/20;
+  @apply transition-all duration-200;
+}
+
+.form-label {
+  @apply text-sm font-medium text-muted-foreground mb-2 block;
+}
+
+/* Slider custom styles */
+.slider-track {
+  @apply h-2 bg-muted rounded-full;
+}
+
+.slider-range {
+  @apply h-full bg-gradient-to-r from-primary to-secondary rounded-full;
+}
+
+.slider-thumb {
+  @apply w-5 h-5 rounded-full bg-primary border-2 border-background;
+  @apply shadow-lg cursor-pointer transition-transform hover:scale-110;
+}
+
+/* Badge styles */
+.wellness-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+}
+
+.wellness-badge.success {
+  @apply bg-emerald-500/20 text-emerald-400;
+}
+
+.wellness-badge.warning {
+  @apply bg-amber-500/20 text-amber-400;
+}
+
+.wellness-badge.info {
+  @apply bg-blue-500/20 text-blue-400;
+}
+
+/* Opik metrics styles */
+.opik-metric {
+  @apply p-4 rounded-2xl bg-gradient-to-br from-card to-muted/30;
+  @apply border border-white/5;
+}
+
+.opik-chart {
+  @apply rounded-2xl overflow-hidden bg-card/30;
+}
