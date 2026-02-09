@@ -2,7 +2,9 @@
 
 <div align="center">
 
-![Wellness AI](https://images.unsplash.com/photo-1594561177665-052b6b4b781a?w=800&h=400&fit=crop)
+![Wellness AI]
+<img width="1872" height="1017" alt="image" src="https://github.com/user-attachments/assets/e90252b9-f328-4719-bd6a-8ed24d5066c3" />
+
 
 **An intelligent wellness companion that helps you build sustainable fitness routines, manage stress effectively, and prioritize your overall wellbeing.**
 
