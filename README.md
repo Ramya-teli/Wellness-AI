@@ -300,13 +300,6 @@ uvicorn server:app --reload --port 8001
 cd frontend
 yarn start
 ```
-
-6. **Access the App**
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8001/api
-
----
-
 ## 📊 API Reference
 
 ### Dashboard
