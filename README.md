@@ -2,7 +2,8 @@
 
 <div align="center">
 
-<img width="1872" height="1017" alt="image" src="https://github.com/user-attachments/assets/e90252b9-f328-4719-bd6a-8ed24d5066c3" />
+<img width="1891" height="1010" alt="image" src="https://github.com/user-attachments/assets/37ea15e7-e99d-4148-bacd-eb565b149c61" />
+
 
 
 **An intelligent wellness companion that helps you build sustainable fitness routines, manage stress effectively, and prioritize your overall wellbeing.**
