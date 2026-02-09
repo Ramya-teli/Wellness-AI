@@ -388,15 +388,7 @@ This app is designed with wellness in mind:
 - [ ] Advanced analytics with ML predictions
 - [ ] Voice-based AI coaching
 
----
 
-## 📄 License
-
-MIT License - feel free to use this project for your own wellness journey!
-
----
-
-<div align="center">
 
 **Built with ❤️ for a healthier world**
 
